@@ -1,2 +1,5 @@
 # Scrabble-_Game_Proj01
  Scrabble, board-and-tile game in which two to four players compete in forming words with lettered tiles on a 225-square board; words spelled out by letters on the tiles interlock like words in a crossword puzzle. ... Values of unused letters left to players are totalled and deducted from their scores. It’s a 2D Scrabble Game. Made for my client Upwork. I designed UI of game using tiles and basic Unity assets. I coded my game and added Scene transitions alongwith Animations of scene and texts, soundtracks and music  The UI part of game was way more advance than being used in current game market. The Animation part , transitions, and texts were all so upto mark. The client liked my work so much that he gave me bonus on Upwork for my work.
+![Screenshot_3](https://user-images.githubusercontent.com/82231509/134164340-b834da90-bbcf-42c2-a06e-5db14fc47fc9.png)
+![Screenshot_2](https://user-images.githubusercontent.com/82231509/134164365-de94f4f5-3d19-4a56-aeb1-10d24713ade1.png)
+[Documentation.pdf](https://github.com/Cardano-max/Scrabble-_Game_Proj01/files/7202736/Documentation.pdf)
