@@ -1,0 +1,90 @@
+Contents
+Overview ............................................................................................................................................................3
+Quick Start..........................................................................................................................................................3
+Game rules .........................................................................................................................................................4
+Basics..............................................................................................................................................................4
+Board ..............................................................................................................................................................4
+Tiles.................................................................................................................................................................4
+Extra Point Values ..........................................................................................................................................4
+Game start......................................................................................................................................................5
+Turn options...................................................................................................................................................5
+Game end .......................................................................................................................................................7
+Accepted words..............................................................................................................................................7
+Using Font Awesome icons ................................................................................................................................7
+Implementing other language............................................................................................................................8
+Overview
+This package represents ready to play scrabble like game targeted for mobile platforms. Game is turn-based 
+and can be played up to 2-4 players. This asset based on English language only but you can implement any 
+other using guide in “Tips & Tricks” chapter.
+Quick Start
+For quick start playing open “game” scene in WMRG/Scenes/ and hit “Play” button!
+Select players count and click play button.
+3
+4
+Game rules
+Basics
+Up to four players can play this game. The object is to score more points than one's opponent. A player 
+collects points by placing words on the game board. Each letter has a different point value, so the strategy 
+becomes to play words with high scoring letter combinations.
+Board
+A game board is made of up cells in a square grid and has 15 cells wide and 15 cells high. The game tiles fit 
+within these cells one to a cell using drag & drop.
+Tiles
+Game is played with exactly 100 tiles. 98 of these tiles contain letters on them, while there are 2 joker tiles
+with “*” on it. The jokers substitute for any letter in the alphabet. Various letters have different point 
+values, depending on the rarity of the letter and the difficulty in playing it. Joker tiles have no point value.
+Tile values:  0 pts – Joker tile
+ 1 pts – A, E, I, L, N, O, R, S, T, U  2 pts – D, G  3 pts – B, C, M, P
+ 4 pts – F, H, V, W, Y  5 pts – K  8 pts – J, X  10 pts – Q, Z
+Extra Point Values
+Some squares on the Scrabble board represent multipliers. If a tile is placed on this square, then the tile's 
+value is multiplied by a factor or either 2x or 3x. Certain tiles multiply the point value of an entire word and 
+not simply the tile on that space.
+Double Letter Scores(DL) - Green cells are found isolated on the board. When a tile is placed on this space, 
+that tile's point value is multiplied by two.
+Triple Letter Score(TL) - This is a yellow cell on the board. The tile placed on this square has its points 
+multiplied by three.
+Double Word Score(DW) - Blue cells are found running diagonally towards the four corners of the board. 
+When a player plays a word on one of these squares, the point value of the entire word is multiplied by 
+two.
+Triple Word Score(TW) - This is a red square on the game board. These are found on the four sides of the 
+board equidistant from the four corners of the board. When a word is played using this square, then the 
+points for the word are multiplied by three.
+Note that extra point squares are only usable once. If one player plays a word using this cells, then the next 
+time that space is used to make a word, the point value is not multiplied.
+Game start
+At the game start each player receives 7 random letter tiles. Game starts from first player. The player can 
+do one of three things on a turn. The player can place a word, exchange tiles or pass. Most of the time, the 
+player will take the option of playing a word.
+Exchanging tiles allows a player to replace anywhere between one and all of the tiles on the player's rack. If 
+this option is taken, the player cannot do anything else that hand. Therefore, a tile exchange cannot be 
+performed on a turn when the player places a word on the board. A player may pass at any time. 
+A player begins the game by placing a word on the square at the center of the board.
+Turn options
+To apply a word drag and drop tiles on board and click apply button. 5
+6
+To exchange tiles press button, select tiles to exchange and press apply.
+ 
+To pass press menu and click “Skip turn”
+Game end
+When all of the tiles have been taken and one player has used all of the tiles on their rack, then the game 
+ends. Also if players skipped their turns in row so much times as the current players count multiplied with 2
+game ends. For example, if 2 players skip their turns 4 times in a row. The player who earned the 
+highest score wins.
+Accepted words
+Players may place any word which can be found in a standard English language dictionary. The list of 
+accepted words is in text file in WordLists/ospd_optimized.txt
+Using Font Awesome icons
+To use it you need to put AwesomeIcon.cs script on empty object in canvas, put "fontawesome-webfont" 
+from Graphics/fonts as font and fill "Text" field with icon code like xf***
+All icon code you can find here http://fortawesome.github.io/Font-Awesome/cheatsheet/
+7
+Implementing other language
+To use your language, you need to set up alphabet, words list and joker letters list.
+To set up Alphabet click on Alphabet object in inspector and set up all letters.
+To set up words list put the words in a text file and assign it in inspector for wordDictionary
+To check your dictionary works correct enable Testing words object and hit play.
+8
+To set up joker letters just edit it in inspector, details on screenshot below.
+
+If you have any questions please email me at mateeb.ce41ceme@ce.ceme.edu.pk
